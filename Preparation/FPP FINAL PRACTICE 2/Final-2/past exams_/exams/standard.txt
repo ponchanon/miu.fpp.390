@@ -1,0 +1,94 @@
+public static List<Vehicle>/*<implement>*/Volumes/SAMSUNG USB/fpp ecammmm/exams/exams/image-0-02-01-6bef4b8041cb8036f0490e8f457f61c8d44d2850ed2c6c43ce28388ff4a34517-V.jpg/ convertArray(Object[] vehicleArray) {
+		/* implement */
+		
+		List <Vehicle> l1  = new ArrayList <Vehicle> ();
+		
+		for (Object o1 : vehicleArray )
+		{
+			Vehicle v1 = (Vehicle) o1;
+			l1.add(v1);
+		}
+		
+		return l1;
+	}
+	
+	
+	
+	public static int computeTotalMiles(List <Vehicle>/*<implement>*/ vehicleList) {
+		/*implement */
+		
+		int total = 0;
+		
+		for (Vehicle v2 : vehicleList )
+		{
+			total += v2.getMilesUsedToday();
+		}
+		
+		return total;
+	}
+}
+-----------------------------------------------------------------------------------------------------------------
+public class AccountManager {
+	public static double computeAccountBalanceSum(List<Employee> emps) {
+		double sum = 0;
+		for(Employee e : emps) {
+			List<Account> accounts = e.getAccounts();
+			for(Account a: accounts) {
+				sum += a.getBalance();
+			}
+		}
+		return sum;
+	}
+}
+-----------------------------------------------------------------------------------------------------------
+ublic class Admin {
+	public static List<Student> convertArray(Object[] studentArray) {
+		List<Student> list = new ArrayList<>();
+		for(Object ob : studentArray) {
+			list.add((Student)ob);
+		}
+		return list;
+	}
+	
+	
+	public static double computeAverageGpa(List<Student> studentList) {
+		double totalGpa = 0.0;
+		if(studentList.isEmpty()) return 0.0;
+		for(Student s : studentList) {
+			totalGpa += s.computeGpa();
+		}
+		return totalGpa / studentList.size();
+	}
+}
+----------------------------------------------------------------------------------------------------------------------
+ublic class NewEmp {
+	public class Admin {
+	//Map Student by FirstaName and LastName
+	public static HashMap<Key, Student> processStudents(List<Student> students) {
+		//implement
+		Key k;
+		HashMap<Key, Student> table = new HashMap<Key, Student>();
+		for(Student s:students){
+			k= new Key(s.getFirstName(),s.getLastName());
+			table.put(k, s);
+		}
+		return table;
+	}
+	
+	
+}
+--------------------------------------------------------------------------------------------------------------------
+ublic class Admin {
+	public static HashMap<Key, Student> processStudents(List<Student> students) {
+		HashMap<Key, Student> table = new HashMap<Key, Student>();
+		for (Student s : students) {
+			if (s != null) {
+				Key key = new Key(s.getFirstName(), s.getLastName());
+				Student value = s;
+				table.put(key, value);
+			}
+
+		}
+		return table;
+	}
+}

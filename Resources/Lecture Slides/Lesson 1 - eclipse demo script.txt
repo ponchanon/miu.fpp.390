@@ -1,0 +1,34 @@
+Script For Eclipse Demo, Lesson 1
+
+1. Set up a new empty directory as starting workspace
+    example: C:\Data\workspace
+
+2. Java Perspective -- discuss perspectives
+    [We are mainly concerned with Java and Debug perspectives]
+
+3. Eclipse's perspective-based approach 
+     - Compare Java and Debug
+
+3.5. Check the Window > Preferences > Java, Compiler and 
+Installed JREs. Compiler should be set at jdk16, installed jre
+should be jdk16, not jrexxxx
+
+4. Create Hello world example. main method. Change font info
+    - general > appearance > colors and fonts > java > java editor
+    - left panel: 	general > appearance > colors and fonts > view and editor folders >
+              tree and table font for views (only in recent version of Eclipse)	
+   and also UTF-8
+    - general > workspace > text file encoding
+	
+5. Content assist. If not working:
+Windows > Preferences > Java > Editor > Content Assist > Advanced
+Restore defaults
+
+6. Compile and run.
+
+7. Debug.
+
+8. Format.
+
+9. Comments
+
